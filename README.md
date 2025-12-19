@@ -48,19 +48,25 @@ Proiectul poate fi simulat folosind Icarus Verilog și vizualizat cu GTKWave.
 
 Pasul 1: Compilare
 Deschide terminalul în folderul proiectului și rulează comanda:
+```verilog
 iverilog -o simulare.out tb_lidar.v lidar_segmentation.v
+```
 
 Pasul 2: Rulare Simulare
 Rulează executabilul generat pentru a efectua simularea:
+```verilog
 vvp simulare.out
+```
 Vor fi afișate în consolă etapele testării (ex: "Testare SOL PLAT...", "Testare OBSTACOL...") definite în testbench.
 
 Pasul 3: Vizualizare Grafică
 Deschide formele de undă rezultate pentru analiză:
+```verilog
 gtkwave rezultate.vcd
+```
 În GTKWave, adaugă semnalele raw_z_in, filtered_z și segmentation_result pentru a observa detecția obstacolelor.
 
-## 📚 Bibliografie și Referințe
+## 4. Bibliografie și Referințe
 
 Acest proiect a fost dezvoltat pe baza următoarelor lucrări de cercetare și documentații tehnice:
 
